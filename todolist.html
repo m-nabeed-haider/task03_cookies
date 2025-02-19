@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+
+
+        <!-- To-Do List -->
+        <div class="todo-section">
+            <h2>To-Do List</h2>
+            <div class="add-task">
+                <input type="text" id="todoInput" placeholder="Task description">
+                <input type="datetime-local" id="todoTime">
+                <button onclick="addTodo()">Add Task</button>
+            </div>
+            <ul id="todoList"></ul>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* styles.css */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+
+/* Login/Signup Specific Styles */
+.login-container,
+.signup-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2,
+.signup-container h2 {
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-form input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.auth-form button {
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+    background: #0056b3;
+}
+
+.auth-link {
+    margin-top: 1rem;
+    color: #666;
+}
+
+.auth-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page Styles Remain Unchanged */
+/* ... (keep all existing home page styles from previous answer) ... */
+
+.todo-section {
+    margin-top: 2rem;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+}
+
+#todoList {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+#todoList li {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todoList li .task {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+#todoList li .timestamp {
+    font-size: 0.8rem;
+    color: #666;
+}
